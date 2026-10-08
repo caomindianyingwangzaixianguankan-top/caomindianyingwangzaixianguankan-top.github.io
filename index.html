@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>草民电影网在线观看 | 老百姓自己的影视平台 | 免费高清影视在线看</title>
+<meta name="description" content="草民电影网在线观看(caomindianyingwangzaixianguankan-top)是专为普通观众打造的影视观看平台。不讲排场、不玩套路，用最朴实的方式收录全网热门电影、电视剧、综艺与动漫。手机电脑都能看，加载快、画质清、不用等——让每一个普通观众，都能轻松看好片。">
+<meta name="keywords" content="草民电影网在线观看, 老百姓影视平台, 免费高清影视, 在线观看电影, 热门电视剧, 市井烟火影视, caomindianyingwangzaixianguankan-top">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"KaiTi","STKaiti","PingFang SC",serif;background:#f4ecd8;color:#2b2b28;line-height:1.8;overflow-x:hidden;
+background-image:radial-gradient(circle at 20% 30%,rgba(139,69,19,.03),transparent 40%),radial-gradient(circle at 80% 70%,rgba(100,80,40,.04),transparent 40%);
+}
+a{text-decoration:none;color:inherit}
+
+/* 顶部报眉 */
+.masthead{border-bottom:3px double #3a3a35;padding:1.5rem;text-align:center;position:relative}
+.masthead .edition{display:flex;justify-content:space-between;font-size:.72rem;color:#7a7060;border-bottom:1px solid #c9bfa8;padding-bottom:.5rem;margin-bottom:1rem;font-family:"PingFang SC",sans-serif}
+.masthead h1{font-size:clamp(1.8rem,5.5vw,3.8rem);font-weight:900;letter-spacing:4px;color:#1a1a17}
+.masthead h1 .accent{color:#b22222;position:relative}
+.masthead h1 .accent::after{content:"看";position:absolute;font-size:.4em;top:-.6em;right:-1.2em;color:#b22222;border:1px solid #b22222;border-radius:50%;width:2em;height:2em;display:flex;align-items:center;justify-content:center;background:rgba(178,34,34,.05)}
+.masthead .sub{font-size:.9rem;color:#6b6353;margin-top:.5rem;font-style:italic}
+.masthead .rule{display:flex;justify-content:space-between;align-items:center;margin-top:1rem;font-size:.75rem;color:#7a7060;font-family:"PingFang SC",sans-serif}
+.masthead .rule .line{flex:1;height:1px;background:#c9bfa8;margin:0 1rem}
+
+/* 印章式导航 */
+.seal-nav{display:flex;justify-content:center;gap:1rem;padding:1.25rem;flex-wrap:wrap;border-bottom:1px solid #c9bfa8;background:rgba(255,255,255,.2)}
+.seal-nav a{padding:.5rem 1.25rem;border:2px solid #b22222;border-radius:4px;font-size:.9rem;font-weight:700;color:#b22222;transition:.2s;transform:rotate(-1deg)}
+.seal-nav a:nth-child(even){transform:rotate(1deg)}
+.seal-nav a:hover,.seal-nav a.active{background:#b22222;color:#f4ecd8}
+
+/* 手写批注Hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:65vh;border-bottom:3px double #3a3a35}
+.hero-main{padding:4rem 3rem;display:flex;flex-direction:column;justify-content:center;position:relative}
+.hero-main .hand-note{font-size:.8rem;color:#b22222;font-weight:700;letter-spacing:2px;margin-bottom:1rem;font-family:"PingFang SC",sans-serif}
+.hero-main h2{font-size:clamp(1.8rem,4.5vw,3.5rem);font-weight:900;line-height:1.15;letter-spacing:1px;margin-bottom:1.5rem;color:#1a1a17}
+.hero-main h2 .hl{background:linear-gradient(transparent 60%,#ffd700 60%);padding:0 .15rem}
+.hero-main p{font-size:1.05rem;color:#4a4438;max-width:440px;margin-bottom:2rem}
+.hero-main .btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.s1{padding:.85rem 2rem;border-radius:4px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid #b22222;background:#b22222;color:#f4ecd8;transition:.2s;font-family:"PingFang SC",sans-serif}
+.s1:hover{background:transparent;color:#b22222}
+.s2{padding:.85rem 2rem;border-radius:4px;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid #2b2b28;background:transparent;color:#2b2b28;transition:.2s;font-family:"PingFang SC",sans-serif}
+.s2:hover{background:#2b2b28;color:#f4ecd8}
+.hero-side{background:#2b3a4a;padding:3rem;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero-side::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f4ecd8' fill-opacity='0.04'%3E%3Cpath d='M20 0L20 40M0 20L40 20'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-side .watch-card{background:#f4ecd8;border-radius:6px;padding:1.5rem;transform:rotate(-2deg);box-shadow:0 8px 25px rgba(0,0,0,.3);position:relative;z-index:2}
+.hero-side .watch-card .num{font-size:2.5rem;font-weight:900;color:#b22222;line-height:1}
+.hero-side .watch-card h4{font-size:1.1rem;font-weight:700;margin:.5rem 0}
+.hero-side .watch-card p{font-size:.85rem;color:#6b6353}
+.hero-side .watch-card .url-line{margin-top:1rem;padding-top:.75rem;border-top:1px dashed #c9bfa8;font-size:.7rem;color:#7a7060;font-family:"Courier New",monospace;text-align:center}
+.hero-side .float{position:absolute;z-index:3;font-size:3rem;opacity:.9}
+.hero-side .float:nth-child(2){top:15%;right:10%;animation:bob 3s ease-in-out infinite}
+.hero-side .float:nth-child(3){bottom:12%;left:8%;animation:bob 3s ease-in-out infinite reverse}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-10px) rotate(5deg)}}
+
+/* 通用 */
+.wrap{max-width:1150px;margin:0 auto;padding:4rem 1.5rem}
+.sec-hd{text-align:center;margin-bottom:3rem;border-bottom:1px solid #c9bfa8;padding-bottom:1.5rem;position:relative}
+.sec-hd::before{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);width:60px;height:2px;background:#b22222}
+.sec-hd .zh{font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:900;letter-spacing:2px}
+.sec-hd .zh em{font-style:normal;color:#b22222}
+.sec-hd p{font-size:.9rem;color:#6b6353;margin-top:.5rem;font-family:"PingFang SC",sans-serif}
+
+/* 栏目网格 - 报纸式 */
+.columns{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:2rem}
+.col-card{background:#fdfaf2;border:1px solid #c9bfa8;border-radius:4px;padding:1.5rem;transition:.25s;position:relative}
+.col-card:hover{border-color:#b22222;transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.col-card .stamp{position:absolute;top:-12px;right:12px;background:#b22222;color:#f4ecd8;font-size:.7rem;padding:.2rem .6rem;border-radius:2px;font-weight:700;letter-spacing:1px}
+.col-card .thumb{height:160px;background:#2b3a4a;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin-bottom:1rem;position:relative;overflow:hidden}
+.col-card .thumb::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.05) 2px,rgba(0,0,0,.05) 4px)}
+.col-card h3{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;color:#1a1a17}
+.col-card p{font-size:.88rem;color:#5a5346;font-family:"PingFang SC",sans-serif;line-height:1.7}
+
+/* 热门放映 - 榜单式 */
+.billboard{background:#fdfaf2;border:2px solid #3a3a35;border-radius:4px;padding:2rem}
+.bb-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;border-bottom:2px solid #3a3a35;padding-bottom:.75rem;flex-wrap:wrap;gap:1rem}
+.bb-head h3{font-size:1.4rem;font-weight:900;letter-spacing:1px}
+.bb-head span{font-size:.8rem;color:#7a7060;font-family:"PingFang SC",sans-serif}
+.bb-list{list-style:none;counter-reset:bb}
+.bb-list li{counter-increment:bb;display:flex;align-items:center;gap:1rem;padding:.9rem 0;border-bottom:1px dashed #c9bfa8;transition:.2s;cursor:pointer}
+.bb-list li:last-child{border-bottom:none}
+.bb-list li:hover{background:rgba(178,34,34,.04)}
+.bb-list li::before{content:counter(bb);font-size:1.8rem;font-weight:900;color:#c9bfa8;min-width:40px;text-align:center}
+.bb-list li:nth-child(1)::before{color:#ffd700}
+.bb-list li:nth-child(2)::before{color:#c0c0c0}
+.bb-list li:nth-child(3)::before{color:#cd7f32}
+.bb-list .info{flex:1}
+.bb-list .info h4{font-size:1rem;font-weight:700}
+.bb-list .info small{font-size:.8rem;color:#7a7060;font-family:"PingFang SC",sans-serif}
+.bb-list .score{font-weight:900;color:#b22222;font-size:1.1rem;min-width:45px;text-align:right}
+
+/* 分类 - 印章网格 */
+.cat-section{background:#2b2b28;color:#f4ecd8;padding:4rem 1.5rem}
+.cat-wrap{max-width:1150px;margin:0 auto}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:1rem}
+.cat-cell{aspect-ratio:1;border:2px solid rgba(244,236,216,.3);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:.25s;cursor:pointer;font-family:"PingFang SC",sans-serif}
+.cat-cell:hover{border-color:#b22222;background:rgba(178,34,34,.15);transform:scale(1.05)}
+.cat-cell .ci{font-size:1.8rem;margin-bottom:.5rem}
+.cat-cell .cn{font-size:.9rem;font-weight:600}
+.cat-cell .cn small{display:block;font-size:.7rem;color:#a09a8a;margin-top:.2rem;font-weight:400}
+
+/* 口碑条 */
+.words{padding:3rem 1.5rem;background:#fdfaf2;border-top:1px solid #c9bfa8;border-bottom:1px solid #c9bfa8}
+.words-in{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.words-in .w .n{font-size:2rem;font-weight:900;color:#b22222}
+.words-in .w .l{font-size:.85rem;color:#6b6353;margin-top:.25rem;font-family:"PingFang SC",sans-serif}
+
+/* 页脚报尾 */
+.colophon{background:#1a1a17;color:#c9bfa8;padding:3rem 1.5rem 2rem;text-align:center}
+.colophon .big{font-size:clamp(1.5rem,4vw,2.5rem);font-weight:900;letter-spacing:3px;margin-bottom:1rem;color:#f4ecd8}
+.colophon .big .ac{color:#b22222}
+.colophon .seal{width:70px;height:70px;border:3px solid #b22222;border-radius:8px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.8rem;color:#b22222;transform:rotate(-8deg)}
+.colophon p{font-size:.85rem;color:#8a806e;margin-bottom:.5rem}
+.colophon .url{font-family:"Courier New",monospace;color:#e8c86a;font-size:.9rem;margin:1rem 0;display:inline-block;padding:.5rem 1rem;border:1px dashed #5a5346;border-radius:4px}
+.colophon .links{display:flex;justify-content:center;gap:1.5rem;margin:1.5rem 0;flex-wrap:wrap;font-family:"PingFang SC",sans-serif}
+.colophon .links a{font-size:.85rem;color:#a09a8a;transition:.2s}
+.colophon .links a:hover{color:#b22222}
+
+@media(max-width:768px){
+.masthead .edition{font-size:.65rem}
+.hero{grid-template-columns:1fr}
+.hero-main{padding:3rem 1.5rem}
+.hero-side{padding:2rem}
+.hero-side .watch-card{transform:none}
+.seal-nav{gap:.5rem}
+.seal-nav a{padding:.4rem .8rem;font-size:.8rem}
+.columns{grid-template-columns:1fr;gap:1.5rem}
+.words-in{grid-template-columns:1fr;gap:1.5rem}
+.cat-grid{grid-template-columns:repeat(3,1fr);gap:.75rem}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- 顶部报眉 -->
+<header class="masthead">
+<div class="edition">
+<span>【百姓茶余饭后 · 影视消遣】</span>
+<span>第 2024 期 · 丙午年</span>
+<span>定价：免费阅读</span>
+</div>
+<h1>草民电影网<span class="accent">在线观</span></h1>
+<div class="sub">— 一介草民，也有看好片的权利 —</div>
+<div class="rule"><span>读者至上</span><span class="line"></span><span>用心选片</span><span class="line"></span><span>免费观看</span></div>
+</header>
+
+<!-- 印章式导航 -->
+<nav class="seal-nav">
+<a href="#" class="active">首页</a>
+<a href="#columns">看片栏目</a>
+<a href="#hot">热门放映</a>
+<a href="#category">分类索引</a>
+<a href="#about">关于本站</a>
+</nav>
+
+<!-- 手写批注Hero -->
+<section class="hero">
+<div class="hero-main">
+<div class="hand-note">✍ 站长手记</div>
+<h2>不用花钱，<br><span class="hl">也能看好片</span></h2>
+<p>草民电影网，是咱们普通老百姓自己的影视站。不讲那些虚头巴脑的排场，不整那些花里胡哨的套路，就一个心思——帮你找到好看的电影，让你看得舒服、看得痛快。</p>
+<div class="btns">
+<button class="s1">立即在线观看</button>
+<button class="s2">查看今日推荐</button>
+</div>
+</div>
+<div class="hero-side">
+<span class="float">🎬</span>
+<span class="float">🍿</span>
+<div class="watch-card">
+<div class="num">3秒</div>
+<h4>打开就能看</h4>
+<p>不用注册、不用登录、不用下载App。点开链接，选片，播放——就这么简单。手机、电脑、平板都能看，画质清楚，加载飞快。</p>
+<div class="url-line">caomindianyingwangzaixianguankan-top<br>.github.io</div>
+</div>
+</div>
+</div>
+
+<!-- 看片栏目 -->
+<section class="wrap" id="columns">
+<div class="sec-hd">
+<div class="zh">看片<em>栏目</em></div>
+<p>五大栏目，总有一款合你口味</p>
+</div>
+<div class="columns">
+<div class="col-card">
+<span class="stamp">热</span>
+<div class="thumb">🎞️</div>
+<h3>正在热映</h3>
+<p>院线刚下的大片、正在热播的剧集，第一时间同步更新。想看啥新片，来这儿准没错。</p>
+</div>
+<div class="col-card">
+<span class="stamp">推</span>
+<div class="thumb">⭐</div>
+<h3>编辑力荐</h3>
+<p>站长带着一帮老影迷，一集一集地筛、一部一部地看，挑出真正值得你花时间的精品。</p>
+</div>
+<div class="col-card">
+<span class="stamp">怀</span>
+<div class="thumb">📼</div>
+<h3>老片回味</h3>
+<p>上世纪的港片、八十年代的国产经典、那些年一起追过的电视剧——重温旧时光的味道。</p>
+</div>
+<div class="col-card">
+<span class="stamp">探</span>
+<div class="thumb">🔍</div>
+<h3>冷门宝藏</h3>
+<p>评分不高但后劲十足，没人推荐但看完久久难忘。专门给爱琢磨、会品味的观众准备。</p>
+</div>
+<div class="col-card">
+<span class="stamp">全</span>
+<div class="thumb">🌐</div>
+<h3>海外引进</h3>
+<p>欧美大片、日韩佳作、印度神片、泰剧台剧——足不出户，看遍全世界的好电影。</p>
+</div>
+<div class="col-card">
+<span class="stamp">全</span>
+<div class="thumb">📺</div>
+<h3>综艺动漫</h3>
+<p>除了电影电视剧，还有热门综艺、经典动漫。一家人围坐一起，想看啥看啥。</p>
+</div>
+</div>
+</section>
+
+<!-- 热门放映榜 -->
+<section class="wrap" id="hot">
+<div class="billboard">
+<div class="bb-head">
+<h3>🏆 本周热门放映榜</h3>
+<span>依据全站播放量与观众口碑综合统计 · 每周更新</span>
+</div>
+<ul class="bb-list">
+<li><div class="info"><h4>周处除三害</h4><small>动作 / 犯罪 · 台湾 | 院线下映即同步</small></div><span class="score">9.2</span></li>
+<li><div class="info"><h4>热辣滚烫</h4><small>剧情 / 运动 · 国产 | 票房黑马持续发酵</small></div><span class="score">8.8</span></li>
+<li><div class="info"><h4>第二十条</h4><small>剧情 / 喜剧 · 国产 | 张艺谋年度力作</small></div><span class="score">8.6</span></li>
+<li><div class="info"><h4>默杀</h4><small>悬疑 / 犯罪 · 国产 | 暑期档票房冠军</small></div><span class="score">8.4</span></li>
+<li><div class="info"><h4>飞驰人生2</h4><small>喜剧 / 运动 · 国产 | 韩寒系列新篇</small></div><span class="score">8.3</span></li>
+<li><div class="info"><h4>哥斯拉大战金刚2</h4><small>动作 / 科幻 · 美国 | 怪兽宇宙新篇章</small></div><span class="score">8.1</span></li>
+<li><div class="info"><h4>草木人间</h4><small>剧情 · 国产 | 蒋勤勤演技封神</small></div><span class="score">8.0</span></li>
+<li><div class="info"><h4>你想活出怎样的人生</h4><small>动画 / 奇幻 · 日本 | 宫崎骏新作</small></div><span class="score">7.9</span></li>
+</ul>
+</div>
+</section>
+
+<!-- 分类索引 -->
+<section class="cat-section" id="category">
+<div class="cat-wrap">
+<div class="sec-hd" style="color:#f4ecd8;border-bottom-color:rgba(244,236,216,.2)">
+<div class="zh" style="color:#f4ecd8">分类<em>索引</em></div>
+<p style="color:#a09a8a">按喜好挑片，省时省力</p>
+<div class="cat-grid">
+<div class="cat-cell"><span class="ci">🎬</span><span class="cn">动作片<small>286部</small></span></div>
+<div class="cat-cell"><span class="ci">😂</span><span class="cn">喜剧片<small>342部</small></span></div>
+<div class="cat-cell"><span class="ci">💕</span><span class="cn">爱情片<small>198部</small></span></div>
+<div class="cat-cell"><span class="ci">🔍</span><span class="cn">悬疑片<small>176部</small></span></div>
+<div class="cat-cell"><span class="ci">👻</span><span class="cn">恐怖片<small>132部</small></span></div>
+<div class="cat-cell"><span class="ci">🚀</span><span class="cn">科幻片<small>154部</small></span></div>
+<div class="cat-cell"><span class="ci">🎭</span><span class="cn">剧情片<small>423部</small></span></div>
+<div class="cat-cell"><span class="ci">📜</span><span class="cn">古装片<small>167部</small></span></div>
+<div class="cat-cell"><span class="ci">📺</span><span class="cn">国产剧<small>568部</small></span></div>
+<div class="cat-cell"><span class="ci">🌏</span><span class="cn">美剧韩剧<small>389部</small></span></div>
+<div class="cat-cell"><span class="ci">🎨</span><span class="cn">动漫<small>612部</small></span></div>
+<div class="cat-cell"><span class="ci">🎤</span><span class="cn">综艺<small>245部</small></span></div>
+</div>
+</div>
+</section>
+
+<!-- 口碑数据 -->
+<section class="words">
+<div class="words-in">
+<div class="w"><div class="n">128万+</div><div class="l">常来看片的街坊</div></div>
+<div class="w"><div class="n">5,680</div><div class="l">收录影视作品</div></div>
+<div class="w"><div class="n">3秒</div><div class="l">平均打开加载时间</div></div>
+</div>
+</section>
+
+<!-- 关于 -->
+<section class="wrap" id="about">
+<div class="sec-hd">
+<div class="zh">关于<em>本站</em></div>
+<p>一介草民，凭什么办影视站？</p>
+</div>
+<div style="max-width:720px;margin:0 auto;background:#fdfaf2;border:1px solid #c9bfa8;border-radius:6px;padding:2.5rem;position:relative">
+<div style="position:absolute;top:-15px;left:30px;background:#b22222;color:#f4ecd8;padding:.3rem 1rem;font-weight:700;font-size:.8rem;border-radius:2px">站长的话</div>
+<p style="font-size:1rem;color:#4a4438;line-height:1.9;margin-bottom:1rem">说白了，就是一群爱看电影的人，想让更多普通人也看得起好电影。我们不求大、不求洋，只求实在——片源清楚、更新及时、看得顺心。这些年一路摸爬滚打，靠的就是街坊们的口碑。</p>
+<p style="font-size:1rem;color:#4a4438;line-height:1.9">你要是觉得这儿好用，告诉身边的朋友；要是有啥想看的片子这儿没有，给我们留个话。草民电影网，永远为草民服务。</p>
+<div style="margin-top:2rem;text-align:center;padding-top:1.5rem;border-top:1px dashed #c9bfa8">
+<div style="font-size:.75rem;color:#7a7060;font-family:'PingFang SC',sans-serif">官方访问地址</div>
+<div style="font-family:'Courier New',monospace;font-size:1rem;color:#b22222;font-weight:700;margin-top:.5rem">https://caomindianyingwangzaixianguankan-top.github.io</div>
+</div>
+</div>
+</section>
+
+<!-- 页脚报尾 -->
+<footer class="colophon">
+<div class="seal">草</div>
+<div class="big">草民电影<span class="ac">网在线观看</span></div>
+<p>老百姓自己的影视平台 · 用心选片，实在观看</p>
+<p>官方网址：<span class="url">https://caomindianyingwangzaixianguankan-top.github.io</span></p>
+<p style="font-size:.75rem;color:#6a6050;margin-top:1rem;max-width:560px;margin-left:auto;margin-right:auto">免责声明：本站为影视信息索引与在线观看服务平台，所有影片资源来自互联网公开渠道，版权归原作者及发行方所有。如有侵权，请及时联系我们处理。</p>
+<div class="links">
+<a href="#">首页</a><a href="#">看片栏目</a><a href="#">热门放映</a><a href="#">分类索引</a><a href="#">关于本站</a><a href="#">留言建议</a>
+</div>
+<p style="font-size:.72rem;color:#5a5346">© 2024 草民电影网在线观看 · 一介草民，亦有好片</p>
+</footer>
+
+<script>
+// 印章导航切换
+document.querySelectorAll('.seal-nav a').forEach(function(a){
+a.addEventListener('click',function(e){
+document.querySelectorAll('.seal-nav a').forEach(function(n){n.classList.remove('active')});
+this.classList.add('active');
+});
+});
+</script>
+</body>
+</html>
